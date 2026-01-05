@@ -4,10 +4,11 @@ A static, Instagram-like personal photo website built with Next.js, TypeScript, 
 
 ## Features
 
-- 📸 Static photo viewing
-- 🖼️ Grouped photos per post
+- 📸 Static photo and video viewing
+- 🖼️ Grouped media per post
+- 🎥 Video support with playback controls
 - 📝 Captions, date, and location metadata
-- 👆 Swipeable photo viewing
+- 👆 Swipeable media viewing
 - ⌨️ Keyboard navigation
 - ♿ Accessibility features
 - 🎨 Minimal, distraction-free design
@@ -20,11 +21,13 @@ A static, Instagram-like personal photo website built with Next.js, TypeScript, 
 npm install
 ```
 
-### Add Your Photos
+### Add Your Media
 
-1. Add images to `/public/photos/[gallery-name]/`
+1. Add images and videos to `/public/photos/[gallery-name]/`
 2. Create a new gallery file in `/content/galleries/`
 3. Export it in `/content/galleries/index.ts`
+
+Supported video formats: `.mp4`, `.webm`, `.ogg`, `.mov`, `.avi`
 
 ### Run Development Server
 
@@ -46,7 +49,7 @@ npm start
 - `/app` - Next.js App Router pages
 - `/components` - React components
 - `/content/galleries` - Gallery content files
-- `/public/photos` - Image files
+- `/public/photos` - Image and video files
 - `/styles` - Global CSS styles
 
 ## Adding New Galleries
@@ -63,6 +66,7 @@ const myTrip: Gallery = {
   location: "Somewhere",
   caption: "A beautiful day.",
   photos: ["/photos/my-trip/1.jpg", "/photos/my-trip/2.jpg"],
+  videos: ["/photos/my-trip/video.mp4"], // Optional: add videos
 };
 
 export default myTrip;
@@ -76,7 +80,7 @@ import myTrip from "./my-trip";
 export const galleries: Gallery[] = [kyotoTrip, myTrip];
 ```
 
-4. Add your images to `/public/photos/my-trip/`
+4. Add your images and videos to `/public/photos/my-trip/`
 
 ## Deployment
 

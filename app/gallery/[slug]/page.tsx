@@ -3,6 +3,7 @@ import { galleries } from "@/content/galleries";
 import PhotoGrid from "@/components/PhotoGrid";
 import type { Metadata } from "next";
 import type { Gallery } from "@/content/galleries/types";
+import { getMediaItems } from "@/content/galleries/types";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -26,9 +27,13 @@ export async function generateMetadata({
     };
   }
 
-  const title = gallery.title || `${gallery.date}${gallery.location ? ` - ${gallery.location}` : ""}`;
-  const description = gallery.caption || `Photos from ${gallery.date}`;
-  const ogImage = gallery.photos[0] || "/photos/kyoto/1.jpg";
+  const title =
+    gallery.title ||
+    `${gallery.date}${gallery.location ? ` - ${gallery.location}` : ""}`;
+  const description = gallery.caption || `Media from ${gallery.date}`;
+  const mediaItems = getMediaItems(gallery);
+  const firstImage = mediaItems.find((item) => item.type === "image");
+  const ogImage = firstImage?.src || "/photos/socal-origins/1.jpeg";
 
   return {
     title: `${title} | Photo Gallery`,
@@ -83,13 +88,7 @@ export default async function GallerySlugPage({ params }: PageProps) {
           </p>
         )}
       </div>
-      <PhotoGrid
-        photos={gallery.photos}
-        caption={gallery.caption}
-        date={gallery.date}
-        location={gallery.location}
-      />
+      <PhotoGrid gallery={gallery} />
     </div>
   );
 }
-
