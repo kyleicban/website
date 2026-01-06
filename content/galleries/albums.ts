@@ -213,7 +213,7 @@ export const cabo: Gallery = {
 export const coachella2022: Gallery = {
   slug: "coachella-2022",
   date: "2022-04-24",
-  location: "Indio, CA",
+  location: "Coachella 2022",
   caption: "coachella brochella hoechella",
   photos: ["/photos/coachella-2022/1.jpeg"],
 };
@@ -450,7 +450,7 @@ export const chicago2024: Gallery = {
 export const edc2024: Gallery = {
   slug: "edc-2024",
   date: "2024-05-24",
-  location: "EDC",
+  location: "EDC 2024",
   caption: "WUB WUB WUB WUB WUB WUB WUB WUB WUB WUB WUB WUB",
   photos: ["/photos/edc-2024/1.jpeg"],
 };
@@ -512,10 +512,206 @@ export const coron: Gallery = {
   photos: ["/photos/philippines-coron/1.jpeg"],
 };
 
+export const laTrip2025: Gallery = {
+  slug: "la-trip-2025",
+  date: "2025-02-23",
+  location: "Los Angeles, CA",
+  caption: "Thrifting with the homies",
+  photos: ["/photos/la-trip-2025/1.jpeg"],
+};
+
 export const hongKong2025: Gallery = {
   slug: "asia-trip-hong-kong",
   date: "2025-03-23",
   location: "Hong Kong",
-  caption: "First stop!",
+  caption: "Asia Trip: First stop!",
   photos: ["/photos/hong-kong-2025/1.jpeg"],
+};
+
+export const singapore2025: Gallery = {
+  slug: "asia-trip-singapore",
+  date: "2025-03-26",
+  location: "Singapore",
+  caption: "Asia Trip: Second stop!",
+  photos: ["/photos/singapore-2025/1.jpeg"],
+};
+
+export const taiwan2025: Gallery = {
+  slug: "asia-trip-taiwan",
+  date: "2025-03-29",
+  location: "Taipei 101",
+  caption: "Asia Trip: Third stop!",
+  photos: ["/photos/taiwan-2025/1.jpeg"],
+};
+
+export const japan2025KirbyCafe: Gallery = {
+  slug: "asia-trip-japan-kirby-cafe",
+  date: "2025-04-01",
+  location: "Kirby Cafe",
+  caption: "Asia Trip: Last stop!",
+  photos: ["/photos/japan-2025-kirby-cafe/1.jpeg"],
+};
+
+export const sfOaklandBridge: Gallery = {
+  slug: "sf-oakland-bridge",
+  date: "2025-04-19",
+  location: "San Francisco, CA",
+  caption: "I'm on a boat motha fukka",
+  photos: ["/photos/sf-oakland-bridge/1.jpeg"],
+};
+
+export const edc2025: Gallery = {
+  slug: "edc-2025",
+  date: "2025-05-18",
+  location: "EDC 2025",
+  caption: "nothing sus here",
+  photos: ["/photos/edc-2025/1.jpeg"],
+};
+
+export const hairDonation: Gallery = {
+  slug: "hair-donation",
+  date: "2025-06-16",
+  location: "Menlo Park, CA",
+  caption: "Hair chopped and donated! End of an era :')",
+  photos: ["/photos/hair-donation/1.jpeg"],
+};
+
+export const vancouver2025: Gallery = {
+  slug: "vancouver-2025",
+  date: "2025-07-07",
+  location: "Vancouver, BC",
+  caption: "bancoober",
+  photos: ["/photos/vancouver-2025/1.jpeg"],
+};
+
+export const openSauce2025: Gallery = {
+  slug: "open-sauce-2025",
+  date: "2025-06-20",
+  location: "Open Sauce 2025",
+  caption: "still no sus activity here",
+  photos: ["/photos/open-sauce-2025/1.jpeg"],
+};
+
+export const outsideLands2025: Gallery = {
+  slug: "outside-lands-2025",
+  date: "2025-08-09",
+  location: "OutsideLands 2025",
+  caption: "gettin sticky in this bitch",
+  photos: ["/photos/outside-lands-2025/1.jpeg"],
+};
+
+export const pokemonWorlds2025: Gallery = {
+  slug: "pokemon-worlds-2025",
+  date: "2025-08-16",
+  location: "Pokemon Worlds 2025",
+  caption: "Little Kyle's dream come true!!! I freaking love Pokemon <3",
+  photos: ["/photos/pokemon-worlds-2025/1.jpeg"],
+};
+
+export const portola2025: Gallery = {
+  slug: "portola-2025",
+  date: "2025-09-20",
+  location: "Portola 2025",
+  caption: "ethereal energy",
+  photos: ["/photos/portola-2025/1.jpeg"],
+};
+
+export const spartan2025: Gallery = {
+  slug: "spartan-2025",
+  date: "2025-10-01",
+  location: "Lake Elsinore, CA",
+  caption: "THIS IS SPARTA",
+  photos: ["/photos/spartan-2025/1.jpeg"],
+};
+
+export const yosemite2025: Gallery = {
+  slug: "yosemite-2025",
+  date: "2025-10-10",
+  location: "Yosemite National Park",
+  caption: "mother nature is so pretty",
+  photos: [
+    "/photos/yosemite-2025/1.jpeg",
+    "/photos/yosemite-2025/2.jpeg",
+    "/photos/yosemite-2025/3.jpeg",
+    "/photos/yosemite-2025/4.jpeg",
+  ],
+};
+
+export const hawaii2025PaddleBoarding: Gallery = {
+  slug: "hawaii-2025-week-one",
+  date: "2025-11-17",
+  location: "Honolulu, HI",
+  caption: "Hawai'i Week One! Sunshine gives me a serotonin boost 😌",
+  photos: ["/photos/hawaii-2025-week-one/1.jpeg"],
+};
+
+export const hawaii2025LocoMoco: Gallery = {
+  slug: "hawaii-2025-loco-moco",
+  date: "2025-11-23",
+  location: "Honolulu, HI",
+  caption: "Loco moco's are my favorite <3",
+  photos: ["/photos/hawaii-2025-loco-moco/1.jpeg"],
+};
+
+export const hawaii2025Papakolea: Gallery = {
+  slug: "hawaii-2025-papakolea",
+  date: "2025-11-28",
+  location: "Papakōlea Beach",
+  caption: "Missed this last time I was on Big Island 💚",
+  photos: ["/photos/hawaii-2025-papakolea-beach/1.jpeg"],
+};
+
+export const hawaii2025Kilauea: Gallery = {
+  slug: "hawaii-2025-",
+  date: "2025-11-17",
+  location: "Hawai'i Volcanoes National Park",
+  caption: "Hiked Kīlauea Iki & Crater Rim Trail + Nāhuku Lava Tube",
+  photos: [
+    "/photos/hawaii-2025-kilauea/1.jpeg",
+    "/photos/hawaii-2025-kilauea/2.jpeg",
+  ],
+};
+
+export const hawaii2025Surfing: Gallery = {
+  slug: "hawaii-2025-surfing",
+  date: "2025-12-03",
+  location: "Oahu South Shore",
+  caption:
+    "Kook photo XD | Not pictured me surfing everyday during our last week",
+  photos: ["/photos/hawaii-2025-surfing/1.jpeg"],
+};
+
+export const hawaii2025Lanikai: Gallery = {
+  slug: "hawaii-2025-lanikai",
+  date: "2025-12-06",
+  location: "Kailua, HI",
+  caption: "Lanikai pillbox hike + Lanikai beach",
+  photos: ["/photos/hawaii-2025-lanikai/1.jpeg"],
+};
+
+export const hawaii2025Marathon: Gallery = {
+  slug: "hawaii-2025-marathon",
+  date: "2025-12-14",
+  location: "Honolulu, HI",
+  caption: "Honolulu Marathon 2025",
+  photos: [
+    "/photos/hawaii-2025-marathon/1.jpeg",
+    "/photos/hawaii-2025-marathon/2.jpeg",
+  ],
+};
+
+export const hawaii2025Maui: Gallery = {
+  slug: "hawaii-2025-maui",
+  date: "2025-12-21",
+  location: "Maui, HI",
+  caption: "Saw a wild nene >:)",
+  photos: ["/photos/hawaii-2025-maui/1.jpeg"],
+};
+
+export const hawaii2025Christmas: Gallery = {
+  slug: "hawaii-2025-christmas",
+  date: "2025-12-26",
+  location: "Ewa Beach, HI",
+  caption: "Sunset",
+  photos: ["/photos/hawaii-2025-christmas/1.jpeg"],
 };
