@@ -3,7 +3,7 @@ import { galleries } from "@/content/galleries";
 import PhotoGrid from "@/components/PhotoGrid";
 import type { Metadata } from "next";
 import type { Gallery } from "@/content/galleries/types";
-import { getMediaItems } from "@/content/galleries/types";
+import { getMediaItems, formatDate } from "@/content/galleries/types";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -60,15 +60,6 @@ export default async function GallerySlugPage({ params }: PageProps) {
   if (!gallery) {
     notFound();
   }
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
 
   return (
     <div>

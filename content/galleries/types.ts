@@ -20,17 +20,31 @@ export function isVideo(src: string): boolean {
 
 export function getMediaItems(gallery: Gallery): MediaItem[] {
   const items: MediaItem[] = [];
-  
+
   gallery.photos.forEach((photo) => {
     items.push({ src: photo, type: "image" });
   });
-  
+
   if (gallery.videos) {
     gallery.videos.forEach((video) => {
       items.push({ src: video, type: "video" });
     });
   }
-  
+
   return items;
 }
 
+/**
+ * Formats a date string (YYYY-MM-DD) as a local date string.
+ * Parses the date as a local date to avoid timezone shifts.
+ */
+export function formatDate(dateString: string): string {
+  // Parse YYYY-MM-DD format and create a local date
+  const [year, month, day] = dateString.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}

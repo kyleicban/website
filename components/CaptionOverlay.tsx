@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { formatDate } from "@/content/galleries/types";
 
 interface CaptionOverlayProps {
   caption?: string;
@@ -15,14 +16,6 @@ export default function CaptionOverlay({
   location,
   isVisible,
 }: CaptionOverlayProps) {
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
 
   return (
     <motion.div
