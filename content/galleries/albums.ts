@@ -40,6 +40,14 @@ export const ogRoomiePhoto: Gallery = {
   photos: ["/photos/og-roomie-photo/1.jpeg"],
 };
 
+export const hedrickHall: Gallery = {
+  slug: "hedrick-hall",
+  date: "2018-12-12",
+  location: "Hedrick Hall 6 South",
+  caption: "End of first quarter!",
+  photos: ["/photos/hedrick-hall/1.jpeg"],
+};
+
 export const superBloom: Gallery = {
   slug: "super-bloom",
   date: "2019-03-28",
@@ -54,6 +62,30 @@ export const uclaCentennial: Gallery = {
   location: "Los Angeles, CA",
   caption: "UCLA Centennial",
   photos: ["/photos/ucla-centennial/1.jpeg"],
+};
+
+export const woddenDyno: Gallery = {
+  slug: "wooden-dyno",
+  date: "2019-06-10",
+  location: "John Wooden Recreation Center",
+  caption: "Everybody sent their projects this day 💪",
+  photos: ["/photos/wooden-dyno/1.jpeg"],
+};
+
+export const temecula2020: Gallery = {
+  slug: "temecula-2020",
+  date: "2019-02-16",
+  location: "Temecula, CA",
+  caption: "Took everyone to see the hometown <3",
+  photos: ["/photos/temecula-2020/1.jpeg"],
+};
+
+export const spcn2020: Gallery = {
+  slug: "spcn-2020",
+  date: "2020-05-02",
+  location: "Wilson Plaza",
+  caption: "See you at Royce! 🥲",
+  photos: ["/photos/spcn-2020/1.jpeg"],
 };
 
 export const girlsGirlsGirls: Gallery = {
@@ -72,6 +104,14 @@ export const glendonBoys: Gallery = {
   photos: ["/photos/glendon-boys/1.jpeg"],
 };
 
+export const royceArches: Gallery = {
+  slug: "royce-arches",
+  date: "2021-03-30",
+  location: "Royce Arches",
+  caption: "Favorite study spot 😌",
+  photos: ["/photos/royce-arches/1.jpeg"],
+};
+
 export const dockweiler: Gallery = {
   slug: "dockweiler",
   date: "2021-04-18",
@@ -87,6 +127,25 @@ export const kakashi: Gallery = {
   caption:
     "Those who break the rules are scum, but those who abandon their friends are worse than scum.",
   photos: ["/photos/kakashi/1.jpeg"],
+};
+
+export const birthday21: Gallery = {
+  slug: "21st-birthday",
+  date: "2021-05-21",
+  location: "The Girls Downstairs",
+  caption: "COVID 19? Nope, COVID 21 :)",
+  photos: ["/photos/21st-birthday/1.jpeg"],
+};
+
+export const uclaGraduation2021: Gallery = {
+  slug: "ucla-graduation-2021",
+  date: "2021-06-04",
+  location: "Openaire LA",
+  caption: "Congrats grads! Thanks for inspiring me <3",
+  photos: [
+    "/photos/ucla-graduation-2021/1.jpeg",
+    "/photos/ucla-graduation-2021/2.jpeg",
+  ],
 };
 
 export const dcFourthOfJuly: Gallery = {
@@ -119,7 +178,22 @@ export const kenma: Gallery = {
   date: "2021-10-31",
   location: "Nekoma High School",
   caption: "Flying high!",
-  photos: ["/photos/kenma/1.jpeg"],
+  photos: ["/photos/kenma/1.jpeg", "/photos/kenma/2.jpeg"],
+};
+
+export const optimizationTextbook: Gallery = {
+  slug: "optimization-textbook",
+  date: "2021-11-12",
+  location: "UCLA Electrical Engineering and Computer Science",
+  caption: "Successfully managed to insert myself into a college textbook 😈",
+  photos: [
+    "/photos/optimization-textbook/1.jpeg",
+    "/photos/optimization-textbook/2.jpeg",
+    "/photos/optimization-textbook/3.jpeg",
+    "/photos/optimization-textbook/4.jpeg",
+    "/photos/optimization-textbook/5.jpeg",
+    "/photos/optimization-textbook/6.jpeg",
+  ],
 };
 
 export const idyllwild: Gallery = {
@@ -143,7 +217,20 @@ export const oahu2021: Gallery = {
   date: "2022-01-10",
   location: "Oahu, HI",
   caption: "Healing in Hawai'i <3",
-  photos: ["/photos/oahu-2021/1.jpeg"],
+  photos: [
+    "/photos/oahu-2021/1.jpeg",
+    "/photos/oahu-2021/2.jpeg",
+    "/photos/oahu-2021/3.jpeg",
+    "/photos/oahu-2021/4.jpeg",
+  ],
+};
+
+export const getty: Gallery = {
+  slug: "the-getty",
+  date: "2022-01-23",
+  location: "The Getty Museum",
+  caption: "Day the Getty :)",
+  photos: ["/photos/getty/1.jpeg", "/photos/getty/2.jpeg"],
 };
 
 export const westwoodPhotoshoot: Gallery = {
@@ -186,6 +273,14 @@ export const sunsetValentine: Gallery = {
   photos: ["/photos/sunset-valentine/1.jpeg"],
 };
 
+export const austin: Gallery = {
+  slug: "austin",
+  date: "2022-02-19",
+  location: "Austin, TX",
+  caption: "Everything's bigger in Texas 🤠",
+  photos: ["/photos/austin/1.jpeg"],
+};
+
 export const miami: Gallery = {
   slug: "miami",
   date: "2022-02-24",
@@ -210,20 +305,46 @@ export const cabo: Gallery = {
   photos: ["/photos/cabo/1.jpeg"],
 };
 
+export const exploretech: Gallery = {
+  slug: "exploretechla",
+  date: "2022-04-01",
+  location: "UCLA",
+  caption: "#exploretechla now give me my tickets 🤖",
+  photos: [
+    "/photos/exploretech/1.jpeg",
+    "/photos/exploretech/2.jpeg",
+    "/photos/exploretech/3.jpeg",
+    "/photos/exploretech/4.jpeg",
+  ],
+};
+
 export const coachella2022: Gallery = {
   slug: "coachella-2022",
   date: "2022-04-24",
   location: "Coachella 2022",
   caption: "coachella brochella hoechella",
-  photos: ["/photos/coachella-2022/1.jpeg"],
+  photos: [
+    "/photos/coachella-2022/1.jpeg",
+    "/photos/coachella-2022/2.jpeg",
+    "/photos/coachella-2022/3.jpeg",
+    "/photos/coachella-2022/4.jpeg",
+  ],
 };
 
-export const spcn: Gallery = {
-  slug: "spcn",
+export const spcn2022: Gallery = {
+  slug: "spcn-2022",
   date: "2022-05-21",
   location: "Royce Hall",
   caption: "tiniks <3",
-  photos: ["/photos/spcn/1.jpeg"],
+  photos: ["/photos/spcn-2022/1.jpeg"],
+};
+
+export const lacma: Gallery = {
+  slug: "lacma",
+  date: "2022-05-27",
+  location: "LACMA",
+  caption: "urban lights 🌟",
+  photos: ["/photos/lacma/1.jpeg"],
 };
 
 export const infinityRoom: Gallery = {
@@ -234,6 +355,20 @@ export const infinityRoom: Gallery = {
   photos: ["/photos/infinity-room/1.jpeg"],
 };
 
+export const uclaGraduation2022: Gallery = {
+  slug: "ucla-graduation-2022",
+  date: "2022-06-12",
+  location: "University of California, Los Angeles",
+  caption:
+    "U C L sl-A-y\nThanks everyone for giving me the best four years of my life 💙💛",
+  photos: [
+    "/photos/ucla-graduation-2022/1.jpeg",
+    "/photos/ucla-graduation-2022/2.jpeg",
+    "/photos/ucla-graduation-2022/3.jpeg",
+    "/photos/ucla-graduation-2022/4.jpeg",
+  ],
+};
+
 export const helenDay: Gallery = {
   slug: "helen-day",
   date: "2022-06-23",
@@ -242,12 +377,33 @@ export const helenDay: Gallery = {
   photos: ["/photos/helen-day/1.jpeg"],
 };
 
+export const bigIsland2022: Gallery = {
+  slug: "big-island-2022",
+  date: "2022-06-30",
+  location: "The Big Island, HI",
+  caption: "Black sand beaches 🖤",
+  photos: [
+    "/photos/big-island-2022/1.jpeg",
+    "/photos/big-island-2022/2.jpeg",
+    "/photos/big-island-2022/3.jpeg",
+    "/photos/big-island-2022/4.jpeg",
+  ],
+};
+
 export const centralPark: Gallery = {
   slug: "central-park",
   date: "2022-07-15",
   location: "Central Park",
   caption: "Moved to NYC!",
   photos: ["/photos/central-park/1.jpeg"],
+};
+
+export const trello: Gallery = {
+  slug: "first-day-at-work",
+  date: "2022-07-21",
+  location: "888 Broadway, New York, NY",
+  caption: "First day of big boi job!",
+  photos: ["/photos/trello/1.jpeg"],
 };
 
 export const chicago2022: Gallery = {
@@ -263,7 +419,21 @@ export const whitneyMuseum: Gallery = {
   date: "2022-10-08",
   location: "The Whitney",
   caption: "Museum photoshoot",
-  photos: ["/photos/whitney-museum/1.jpeg"],
+  photos: ["/photos/whitney-museum/1.jpeg", "/photos/whitney-museum/2.jpeg"],
+};
+
+export const centralRockCompDyno: Gallery = {
+  slug: "central-rock-comp-dyno",
+  date: "2022-10-23",
+  location: "Central Rock Gym - Manhattan",
+  caption:
+    "Climbing gym opened up the comp dynos and ended up projecting this green one. So stoked to send in one sesh (send in last vid!) Felt impossible but last attempt I felt in control so I would give it a V6.",
+  photos: [
+    "/photos/central-rock-comp-dyno/1.mov",
+    "/photos/central-rock-comp-dyno/2.mov",
+    "/photos/central-rock-comp-dyno/3.mov",
+    "/photos/central-rock-comp-dyno/4.mov",
+  ],
 };
 
 export const breakneckRidge: Gallery = {
@@ -307,6 +477,15 @@ export const laJolla: Gallery = {
   photos: ["/photos/la-jolla/1.jpeg"],
 };
 
+export const vitalTemeculaV7: Gallery = {
+  slug: "vital-murrieta-v7",
+  date: "2023-02-27",
+  location: "VITAL Climbing Gym - Murrieta",
+  caption:
+    "Didn't record the first part, but got a super delicate V7 while at home. Was the only one to send it this day 💪",
+  photos: ["/photos/vital-temecula-v7/1.mov"],
+};
+
 export const shenzhen2023: Gallery = {
   slug: "shenzhen-2023",
   date: "2023-04-10",
@@ -320,7 +499,7 @@ export const hongKong2023: Gallery = {
   date: "2023-04-13",
   location: "Hong Kong",
   caption: "Pretty lights :)",
-  photos: ["/photos/hong-kong-2023/1.jpeg"],
+  photos: ["/photos/hong-kong-2023/1.jpeg", "/photos/hong-kong-2023/2.jpeg"],
 };
 
 export const laTrip2023: Gallery = {
@@ -331,12 +510,36 @@ export const laTrip2023: Gallery = {
   photos: ["/photos/la-trip-2023/1.jpeg"],
 };
 
+export const forTheBoys: Gallery = {
+  slug: "for-the-boys",
+  date: "2023-06-24",
+  location: "Long Island City, NY",
+  caption: "gym 🤠",
+  photos: ["/photos/for-the-boys/1.jpeg"],
+};
+
+export const rageRoom: Gallery = {
+  slug: "rage-room",
+  date: "2023-06-26",
+  location: "Williamsburg, NY",
+  caption: "Enjoy this edit I made of Gloria and I smashing shit",
+  photos: ["/photos/rage-room/1.mov"],
+};
+
 export const niagaraFalls: Gallery = {
   slug: "niagara-falls",
   date: "2023-07-08",
   location: "Niagara Falls",
   caption: "Crazy!!!",
   photos: ["/photos/niagara-falls/1.jpeg"],
+};
+
+export const ratRock: Gallery = {
+  slug: "rat-rock",
+  date: "2023-07-22",
+  location: "Rat Rock",
+  caption: "Classic climbing spot in Central Park",
+  photos: ["/photos/rat-rock/1.jpeg", "/photos/rat-rock/2.jpeg"],
 };
 
 export const greatOakNYCCrew: Gallery = {
@@ -347,6 +550,22 @@ export const greatOakNYCCrew: Gallery = {
   photos: ["/photos/great-oak-nyc-crew/1.jpeg"],
 };
 
+export const nycSkyline: Gallery = {
+  slug: "nyc-skyline",
+  date: "2023-07-07",
+  location: "Long Island City, NYC",
+  caption: "Manhattan skyline from new apartment rooftop 🌃",
+  photos: ["/photos/nyc-skyline/1.jpeg"],
+};
+
+export const blackpink: Gallery = {
+  slug: "blackpink",
+  date: "2023-07-11",
+  location: "Blackpink",
+  caption: "Officially a blink now 🖤🩷",
+  photos: ["/photos/blackpink/1.jpeg"],
+};
+
 export const floofEra: Gallery = {
   slug: "floof-era",
   date: "2023-08-13",
@@ -355,12 +574,29 @@ export const floofEra: Gallery = {
   photos: ["/photos/floof-era/1.jpeg"],
 };
 
+export const ezoo2023: Gallery = {
+  slug: "ezoo-2023",
+  date: "2023-08-03",
+  location: "EZoo 2023",
+  caption:
+    "Not pictured, people storming the gates and us waiting 2 hours to get home",
+  photos: [
+    "/photos/ezoo-2023/1.jpeg",
+    "/photos/ezoo-2023/2.jpeg",
+    "/photos/ezoo-2023/3.jpeg",
+  ],
+};
+
 export const angelsLanding: Gallery = {
   slug: "angels-landing",
   date: "2023-09-23",
   location: "Angel's Landing",
   caption: "I like rocks",
-  photos: ["/photos/angels-landing/1.jpeg"],
+  photos: [
+    "/photos/angels-landing/1.jpeg",
+    "/photos/angels-landing/2.jpeg",
+    "/photos/angels-landing/3.jpeg",
+  ],
 };
 
 export const narrows: Gallery = {
@@ -387,6 +623,14 @@ export const halloween2023: Gallery = {
   photos: ["/photos/halloween-2023/1.jpeg"],
 };
 
+export const pocha32: Gallery = {
+  slug: "pocha-32",
+  date: "2023-11-04",
+  location: "Pocha 32",
+  caption: "Nicolo comes to visit!",
+  photos: ["/photos/pocha-32/1.jpeg"],
+};
+
 export const barcelona: Gallery = {
   slug: "barcelona",
   date: "2023-11-12",
@@ -398,13 +642,40 @@ export const barcelona: Gallery = {
     "/photos/barcelona/3.jpeg",
   ],
 };
+export const madrid: Gallery = {
+  slug: "madrid",
+  date: "2023-11-12",
+  location: "Madrid, Spain",
+  caption: "This is where I accidentally ordered a dessert coffee :D",
+  photos: ["/photos/madrid/1.jpeg"],
+};
 
 export const douroValley: Gallery = {
   slug: "douro-valley",
   date: "2023-11-15",
   location: "The Douro Valley",
   caption: "wine tasting! #1 rule was to not fall asleep",
-  photos: ["/photos/douro-valley/1.jpeg", "/photos/douro-valley/2.jpeg"],
+  photos: [
+    "/photos/douro-valley/1.jpeg",
+    "/photos/douro-valley/2.jpeg",
+    "/photos/douro-valley/3.jpeg",
+  ],
+};
+
+export const temeculaNYCBesties: Gallery = {
+  slug: "temecula-NYC-besties",
+  date: "2023-11-21",
+  location: "New York City, NY",
+  caption: "Friends for 7 yearts and counting <3",
+  photos: ["/photos/temecula-nyc-besties/1.jpeg"],
+};
+
+export const vitalBrooklynV7: Gallery = {
+  slug: "vital-brooklyn-v7",
+  date: "2023-12-06",
+  location: "VITAL Climbing Gym - Brooklyn",
+  caption: "NYC send off, got this sick V7 🤙",
+  photos: ["/photos/vital-brooklyn-v7/1.mov"],
 };
 
 export const sedona: Gallery = {
@@ -423,12 +694,28 @@ export const grandCanyon: Gallery = {
   photos: ["/photos/grand-canyon/1.jpeg"],
 };
 
+export const appleFirstDay: Gallery = {
+  slug: "first-day-at-apple",
+  date: "2024-01-08",
+  location: "Sunnyvale, CA",
+  caption: "First day 🍎",
+  photos: ["/photos/apple-first-day/1.jpeg"],
+};
+
 export const montereyAquarium: Gallery = {
   slug: "monterey-aquarium",
   date: "2024-01-15",
   location: "Monterey, CA",
   caption: "Anniversary at the aquarium :)",
   photos: ["/photos/monterey-aquarium/1.jpeg"],
+};
+
+export const bowling: Gallery = {
+  slug: "bowling-clutch",
+  date: "2023-04-17",
+  location: "Cupertino, CA",
+  caption: "Clutch 11th frame to beat Mr Batman 😤",
+  photos: ["/photos/bowling/1.mov"],
 };
 
 export const whistler: Gallery = {
@@ -460,7 +747,12 @@ export const banff: Gallery = {
   date: "2024-05-25",
   location: "Banff National Park",
   caption: "Very pretty :')",
-  photos: ["/photos/banff/1.jpeg", "/photos/banff/2.jpeg"],
+  photos: [
+    "/photos/banff/1.jpeg",
+    "/photos/banff/2.jpeg",
+    "/photos/banff/3.jpeg",
+    "/photos/banff/4.jpeg",
+  ],
 };
 
 export const kaitlinsBday: Gallery = {
@@ -471,13 +763,37 @@ export const kaitlinsBday: Gallery = {
   photos: ["/photos/kaitlins-bday/1.jpeg"],
 };
 
+export const craigAndKhanhEngagement: Gallery = {
+  slug: "craig-and-khanhs-engagement",
+  date: "2024-08-30",
+  location: "Morro Bay, CA",
+  caption: "Craig and Khanh are engagement WOOOOOOOOO!!!",
+  photos: ["/photos/craig-and-khanh-engagement/1.jpeg"],
+};
+
+export const pismoDunes: Gallery = {
+  slug: "pismo-dunes",
+  date: "2024-08-31",
+  location: "Pismo Beach, CA",
+  caption: "Craig got us stuck and we had to get pulled out :p",
+  photos: ["/photos/pismo-dunes/1.jpeg", "/photos/pismo-dunes/2.jpeg"],
+};
+
+export const littleSur: Gallery = {
+  slug: "little-sur",
+  date: "2024-09-02",
+  location: "Little Sur, CA",
+  caption: "Water <3",
+  photos: ["/photos/little-sur/1.jpeg"],
+};
+
 export const jabbawockeez: Gallery = {
   slug: "jabbawockeez",
-  date: "2024-08-24",
+  date: "2024-09-24",
   location: "The Jabbawockeez",
   caption:
     "Karaoke with the Jabbawockeez? Didn't know that was on the bucket list",
-  photos: ["/photos/jabbawockeez/1.jpeg"],
+  photos: ["/photos/jabbawockeez/1.mov"],
 };
 
 export const bigSur2024: Gallery = {
@@ -493,7 +809,22 @@ export const bali: Gallery = {
   date: "2024-11-11",
   location: "Bali, Indonesia",
   caption: "Gabby gang at gabbychella!",
-  photos: ["/photos/bali/1.jpeg"],
+  photos: [
+    "/photos/bali/1.jpeg",
+    "/photos/bali/2.jpeg",
+    "/photos/bali/3.jpeg",
+    "/photos/bali/4.jpeg",
+    "/photos/bali/5.jpeg",
+    "/photos/bali/6.mov",
+  ],
+};
+
+export const appleChristmasParty: Gallery = {
+  slug: "apple-christmas-party",
+  date: "2025-12-10",
+  location: "Apple Park",
+  caption: "🌈🛸🎄",
+  photos: ["/photos/hong-kong-2025/1.jpeg"],
 };
 
 export const elNido: Gallery = {
@@ -501,7 +832,14 @@ export const elNido: Gallery = {
   date: "2024-12-25",
   location: "El Nido, Philippines",
   caption: "Maraming pagmamahal 🇵🇭",
-  photos: ["/photos/philippines-el-nido/1.jpeg"],
+  photos: [
+    "/photos/philippines-el-nido/1.jpeg",
+    "/photos/philippines-el-nido/2.jpeg",
+    "/photos/philippines-el-nido/3.jpeg",
+    "/photos/philippines-el-nido/4.jpeg",
+    "/photos/philippines-el-nido/5.jpeg",
+    "/photos/philippines-el-nido/6.jpeg",
+  ],
 };
 
 export const coron: Gallery = {
@@ -509,7 +847,11 @@ export const coron: Gallery = {
   date: "2024-12-29",
   location: "Coron, Philippines",
   caption: "Tatay stole the show with his sick Philippine eagle tattoo!",
-  photos: ["/photos/philippines-coron/1.jpeg"],
+  photos: [
+    "/photos/philippines-coron/1.jpeg",
+    "/photos/philippines-coron/2.jpeg",
+    "/photos/philippines-coron/3.jpeg",
+  ],
 };
 
 export const laTrip2025: Gallery = {
@@ -533,7 +875,14 @@ export const singapore2025: Gallery = {
   date: "2025-03-26",
   location: "Singapore",
   caption: "Asia Trip: Second stop!",
-  photos: ["/photos/singapore-2025/1.jpeg"],
+  photos: [
+    "/photos/singapore-2025/1.jpeg",
+    "/photos/singapore-2025/2.jpeg",
+    "/photos/singapore-2025/3.mov",
+    "/photos/singapore-2025/4.jpeg",
+    "/photos/singapore-2025/5.jpeg",
+    "/photos/singapore-2025/6.jpeg",
+  ],
 };
 
 export const taiwan2025: Gallery = {
@@ -541,15 +890,62 @@ export const taiwan2025: Gallery = {
   date: "2025-03-29",
   location: "Taipei 101",
   caption: "Asia Trip: Third stop!",
-  photos: ["/photos/taiwan-2025/1.jpeg"],
+  photos: [
+    "/photos/taiwan-2025/1.jpeg",
+    "/photos/taiwan-2025/2.jpeg",
+    "/photos/taiwan-2025/3.jpeg",
+    "/photos/taiwan-2025/4.jpeg",
+    "/photos/taiwan-2025/5.mov",
+    "/photos/taiwan-2025/6.jpeg",
+  ],
 };
 
-export const japan2025KirbyCafe: Gallery = {
-  slug: "asia-trip-japan-kirby-cafe",
-  date: "2025-04-01",
-  location: "Kirby Cafe",
+export const japan2025CherryBlossoms: Gallery = {
+  slug: "asia-trip-japan-nerd-stuff",
+  date: "2025-03-30",
+  location: "Tokyo, Japan",
   caption: "Asia Trip: Last stop!",
-  photos: ["/photos/japan-2025-kirby-cafe/1.jpeg"],
+  photos: [
+    "/photos/japan-2025-cherry-blossoms/1.jpeg",
+    "/photos/japan-2025-cherry-blossoms/2.jpeg",
+    "/photos/japan-2025-cherry-blossoms/3.jpeg",
+    "/photos/japan-2025-cherry-blossoms/4.jpeg",
+  ],
+};
+
+export const japan2025Misc: Gallery = {
+  slug: "asia-trip-japan-misc",
+  date: "2025-03-31",
+  location: "Tokyo, Japan",
+  caption: "Lost in Tokyo",
+  photos: [
+    "/photos/japan-2025-misc/1.jpeg",
+    "/photos/japan-2025-misc/2.jpeg",
+    "/photos/japan-2025-misc/3.jpeg",
+    "/photos/japan-2025-misc/4.jpeg",
+  ],
+};
+
+export const japan2025NerdStuff: Gallery = {
+  slug: "asia-trip-japan-nerd-stuff",
+  date: "2025-04-01",
+  location: "Tokyo, Japan",
+  caption: "Kirby Cafe, Pokemon Center, Monster Hunter and Ramen",
+  photos: [
+    "/photos/japan-2025-nerd-stuff/1.jpeg",
+    "/photos/japan-2025-nerd-stuff/2.jpeg",
+    "/photos/japan-2025-nerd-stuff/3.jpeg",
+    "/photos/japan-2025-nerd-stuff/4.jpeg",
+    "/photos/japan-2025-nerd-stuff/5.jpeg",
+  ],
+};
+
+export const paisleysWedding: Gallery = {
+  slug: "paisleys-wedding",
+  date: "2025-04-13",
+  location: "Temecula, CA",
+  caption: "Paisley's married!!!",
+  photos: ["/photos/paisleys-wedding/1.jpeg"],
 };
 
 export const sfOaklandBridge: Gallery = {
@@ -568,6 +964,14 @@ export const edc2025: Gallery = {
   photos: ["/photos/edc-2025/1.jpeg"],
 };
 
+export const skydiving: Gallery = {
+  slug: "skydiving",
+  date: "2025-05-26",
+  location: "Gilroy, CA",
+  caption: "WOOOOOOOOOOOOOOOO!",
+  photos: ["/photos/skydiving/1.mov"],
+};
+
 export const hairDonation: Gallery = {
   slug: "hair-donation",
   date: "2025-06-16",
@@ -581,7 +985,11 @@ export const vancouver2025: Gallery = {
   date: "2025-07-07",
   location: "Vancouver, BC",
   caption: "bancoober",
-  photos: ["/photos/vancouver-2025/1.jpeg"],
+  photos: [
+    "/photos/vancouver-2025/1.jpeg",
+    "/photos/vancouver-2025/2.mov",
+    "/photos/vancouver-2025/3.jpeg",
+  ],
 };
 
 export const openSauce2025: Gallery = {
@@ -605,7 +1013,11 @@ export const pokemonWorlds2025: Gallery = {
   date: "2025-08-16",
   location: "Pokemon Worlds 2025",
   caption: "Little Kyle's dream come true!!! I freaking love Pokemon <3",
-  photos: ["/photos/pokemon-worlds-2025/1.jpeg"],
+  photos: [
+    "/photos/pokemon-worlds-2025/1.jpeg",
+    "/photos/pokemon-worlds-2025/2.mov",
+    "/photos/pokemon-worlds-2025/3.jpeg",
+  ],
 };
 
 export const portola2025: Gallery = {
@@ -621,7 +1033,12 @@ export const spartan2025: Gallery = {
   date: "2025-10-01",
   location: "Lake Elsinore, CA",
   caption: "THIS IS SPARTA",
-  photos: ["/photos/spartan-2025/1.jpeg"],
+  photos: [
+    "/photos/spartan-2025/1.jpeg",
+    "/photos/spartan-2025/2.mov",
+    "/photos/spartan-2025/3.jpeg",
+    "/photos/spartan-2025/4.jpeg",
+  ],
 };
 
 export const yosemite2025: Gallery = {

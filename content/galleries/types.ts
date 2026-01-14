@@ -22,14 +22,12 @@ export function getMediaItems(gallery: Gallery): MediaItem[] {
   const items: MediaItem[] = [];
 
   gallery.photos.forEach((photo) => {
+    if (photo.endsWith(".mov")) {
+      items.push({ src: photo, type: "video" });
+      return;
+    }
     items.push({ src: photo, type: "image" });
   });
-
-  if (gallery.videos) {
-    gallery.videos.forEach((video) => {
-      items.push({ src: video, type: "video" });
-    });
-  }
 
   return items;
 }

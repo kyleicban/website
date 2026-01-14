@@ -12,6 +12,11 @@ export default function GalleryCard({ gallery }: GalleryCardProps) {
   const firstMedia = mediaItems[0];
   const totalCount = mediaItems.length;
 
+  if (!firstMedia) {
+    console.error("Received undefined media!");
+    return null;
+  }
+
   return (
     <Link
       href={`/gallery/${gallery.slug}`}
