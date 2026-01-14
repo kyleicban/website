@@ -5,9 +5,13 @@ import type { Gallery } from "@/content/galleries/types";
 
 interface GalleryCardProps {
   gallery: Gallery;
+  priority?: boolean;
 }
 
-export default function GalleryCard({ gallery }: GalleryCardProps) {
+export default function GalleryCard({
+  gallery,
+  priority = false,
+}: GalleryCardProps) {
   const mediaItems = getMediaItems(gallery);
   const firstMedia = mediaItems[0];
   const totalCount = mediaItems.length;
@@ -51,6 +55,7 @@ export default function GalleryCard({ gallery }: GalleryCardProps) {
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={priority}
         />
       )}
       {totalCount > 1 && (
