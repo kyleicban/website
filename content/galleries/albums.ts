@@ -64,13 +64,13 @@ export const uclaCentennial: Gallery = {
   photos: ["/photos/ucla-centennial/1.jpeg"],
 };
 
-export const woddenDyno: Gallery = {
-  slug: "wooden-dyno",
-  date: "2019-06-10",
-  location: "John Wooden Recreation Center",
-  caption: "Everybody sent their projects this day 💪",
-  photos: ["/photos/wooden-dyno/1.mov"],
-};
+// export const woodenDyno: Gallery = {
+//   slug: "wooden-dyno",
+//   date: "2019-06-10",
+//   location: "John Wooden Recreation Center",
+//   caption: "Everybody sent their projects this day 💪",
+//   photos: ["/photos/wooden-dyno/1.mov"],
+// };
 
 export const temecula2020: Gallery = {
   slug: "temecula-2020",
@@ -422,19 +422,19 @@ export const whitneyMuseum: Gallery = {
   photos: ["/photos/whitney-museum/1.jpeg", "/photos/whitney-museum/2.jpeg"],
 };
 
-export const centralRockCompDyno: Gallery = {
-  slug: "central-rock-comp-dyno",
-  date: "2022-10-23",
-  location: "Central Rock Gym - Manhattan",
-  caption:
-    "Climbing gym opened up the comp dynos and ended up projecting this green one. So stoked to send in one sesh (send in last vid!) Felt impossible but last attempt I felt in control so I would give it a V6.",
-  photos: [
-    "/photos/central-rock-comp-dyno/1.mov",
-    "/photos/central-rock-comp-dyno/2.mov",
-    "/photos/central-rock-comp-dyno/3.mov",
-    "/photos/central-rock-comp-dyno/4.mov",
-  ],
-};
+// export const centralRockCompDyno: Gallery = {
+//   slug: "central-rock-comp-dyno",
+//   date: "2022-10-23",
+//   location: "Central Rock Gym - Manhattan",
+//   caption:
+//     "Climbing gym opened up the comp dynos and ended up projecting this green one. So stoked to send in one sesh (send in last vid!) Felt impossible but last attempt I felt in control so I would give it a V6.",
+//   photos: [
+//     "/photos/central-rock-comp-dyno/1.mov",
+//     "/photos/central-rock-comp-dyno/2.mov",
+//     "/photos/central-rock-comp-dyno/3.mov",
+//     "/photos/central-rock-comp-dyno/4.mov",
+//   ],
+// };
 
 export const breakneckRidge: Gallery = {
   slug: "breakneck-ridge",
@@ -477,14 +477,14 @@ export const laJolla: Gallery = {
   photos: ["/photos/la-jolla/1.jpeg"],
 };
 
-export const vitalTemeculaV7: Gallery = {
-  slug: "vital-murrieta-v7",
-  date: "2023-02-27",
-  location: "VITAL Climbing Gym - Murrieta",
-  caption:
-    "Didn't record the first part, but got a super delicate V7 while at home. Was the only one to send it this day 💪",
-  photos: ["/photos/vital-temecula-v7/1.mov"],
-};
+// export const vitalTemeculaV7: Gallery = {
+//   slug: "vital-murrieta-v7",
+//   date: "2023-02-27",
+//   location: "VITAL Climbing Gym - Murrieta",
+//   caption:
+//     "Didn't record the first part, but got a super delicate V7 while at home. Was the only one to send it this day 💪",
+//   photos: ["/photos/vital-temecula-v7/1.mov"],
+// };
 
 export const shenzhen2023: Gallery = {
   slug: "shenzhen-2023",
@@ -518,13 +518,13 @@ export const forTheBoys: Gallery = {
   photos: ["/photos/for-the-boys/1.jpeg"],
 };
 
-export const rageRoom: Gallery = {
-  slug: "rage-room",
-  date: "2023-06-26",
-  location: "Williamsburg, NY",
-  caption: "Enjoy this edit I made of Gloria and I smashing shit",
-  photos: ["/photos/rage-room/1.mov"],
-};
+// export const rageRoom: Gallery = {
+//   slug: "rage-room",
+//   date: "2023-06-26",
+//   location: "Williamsburg, NY",
+//   caption: "Enjoy this edit I made of Gloria and I smashing shit",
+//   photos: ["/photos/rage-room/1.mov"],
+// };
 
 export const niagaraFalls: Gallery = {
   slug: "niagara-falls",
@@ -670,13 +670,13 @@ export const temeculaNYCBesties: Gallery = {
   photos: ["/photos/temecula-nyc-besties/1.jpeg"],
 };
 
-export const vitalBrooklynV7: Gallery = {
-  slug: "vital-brooklyn-v7",
-  date: "2023-12-06",
-  location: "VITAL Climbing Gym - Brooklyn",
-  caption: "NYC send off, got this sick V7 🤙",
-  photos: ["/photos/vital-brooklyn-v7/1.mov"],
-};
+// export const vitalBrooklynV7: Gallery = {
+//   slug: "vital-brooklyn-v7",
+//   date: "2023-12-06",
+//   location: "VITAL Climbing Gym - Brooklyn",
+//   caption: "NYC send off, got this sick V7 🤙",
+//   photos: ["/photos/vital-brooklyn-v7/1.mov"],
+// };
 
 export const sedona: Gallery = {
   slug: "sedona",
@@ -710,13 +710,13 @@ export const montereyAquarium: Gallery = {
   photos: ["/photos/monterey-aquarium/1.jpeg"],
 };
 
-export const bowling: Gallery = {
-  slug: "bowling-clutch",
-  date: "2023-04-17",
-  location: "Cupertino, CA",
-  caption: "Clutch 11th frame to beat Mr Batman 😤",
-  photos: ["/photos/bowling/1.mov"],
-};
+// export const bowling: Gallery = {
+//   slug: "bowling-clutch",
+//   date: "2023-04-17",
+//   location: "Cupertino, CA",
+//   caption: "Clutch 11th frame to beat Mr Batman 😤",
+//   photos: ["/photos/bowling/1.mov"],
+// };
 
 export const whistler: Gallery = {
   slug: "whistler",
@@ -787,14 +787,14 @@ export const littleSur: Gallery = {
   photos: ["/photos/little-sur/1.jpeg"],
 };
 
-export const jabbawockeez: Gallery = {
-  slug: "jabbawockeez",
-  date: "2024-09-24",
-  location: "The Jabbawockeez",
-  caption:
-    "Karaoke with the Jabbawockeez? Didn't know that was on the bucket list",
-  photos: ["/photos/jabbawockeez/1.mov"],
-};
+// export const jabbawockeez: Gallery = {
+//   slug: "jabbawockeez",
+//   date: "2024-09-24",
+//   location: "The Jabbawockeez",
+//   caption:
+//     "Karaoke with the Jabbawockeez? Didn't know that was on the bucket list",
+//   photos: ["/photos/jabbawockeez/1.mov"],
+// };
 
 export const bigSur2024: Gallery = {
   slug: "big-sur-2024",
@@ -815,7 +815,7 @@ export const bali: Gallery = {
     "/photos/bali/3.jpeg",
     "/photos/bali/4.jpeg",
     "/photos/bali/5.jpeg",
-    "/photos/bali/6.mov",
+    // "/photos/bali/6.mov",
   ],
 };
 
@@ -878,7 +878,7 @@ export const singapore2025: Gallery = {
   photos: [
     "/photos/singapore-2025/1.jpeg",
     "/photos/singapore-2025/2.jpeg",
-    "/photos/singapore-2025/3.mov",
+    // "/photos/singapore-2025/3.mov",
     "/photos/singapore-2025/4.jpeg",
     "/photos/singapore-2025/5.jpeg",
     "/photos/singapore-2025/6.jpeg",
@@ -895,7 +895,7 @@ export const taiwan2025: Gallery = {
     "/photos/taiwan-2025/2.jpeg",
     "/photos/taiwan-2025/3.jpeg",
     "/photos/taiwan-2025/4.jpeg",
-    "/photos/taiwan-2025/5.mov",
+    // "/photos/taiwan-2025/5.mov",
     "/photos/taiwan-2025/6.jpeg",
   ],
 };
@@ -964,13 +964,13 @@ export const edc2025: Gallery = {
   photos: ["/photos/edc-2025/1.jpeg"],
 };
 
-export const skydiving: Gallery = {
-  slug: "skydiving",
-  date: "2025-05-26",
-  location: "Gilroy, CA",
-  caption: "WOOOOOOOOOOOOOOOO!",
-  photos: ["/photos/skydiving/1.mov"],
-};
+// export const skydiving: Gallery = {
+//   slug: "skydiving",
+//   date: "2025-05-26",
+//   location: "Gilroy, CA",
+//   caption: "WOOOOOOOOOOOOOOOO!",
+//   photos: ["/photos/skydiving/1.mov"],
+// };
 
 export const hairDonation: Gallery = {
   slug: "hair-donation",
@@ -987,7 +987,7 @@ export const vancouver2025: Gallery = {
   caption: "bancoober",
   photos: [
     "/photos/vancouver-2025/1.jpeg",
-    "/photos/vancouver-2025/2.mov",
+    // "/photos/vancouver-2025/2.mov",
     "/photos/vancouver-2025/3.jpeg",
   ],
 };
@@ -1015,7 +1015,7 @@ export const pokemonWorlds2025: Gallery = {
   caption: "Little Kyle's dream come true!!! I freaking love Pokemon <3",
   photos: [
     "/photos/pokemon-worlds-2025/1.jpeg",
-    "/photos/pokemon-worlds-2025/2.mov",
+    // "/photos/pokemon-worlds-2025/2.mov",
     "/photos/pokemon-worlds-2025/3.jpeg",
   ],
 };
@@ -1035,7 +1035,7 @@ export const spartan2025: Gallery = {
   caption: "THIS IS SPARTA",
   photos: [
     "/photos/spartan-2025/1.jpeg",
-    "/photos/spartan-2025/2.mov",
+    // "/photos/spartan-2025/2.mov",
     "/photos/spartan-2025/3.jpeg",
     "/photos/spartan-2025/4.jpeg",
   ],

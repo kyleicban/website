@@ -9,12 +9,14 @@ interface GalleryGridProps {
 }
 
 const INITIAL_BATCH_SIZE = 18;
-const LOAD_MORE_BATCH_SIZE = 18;
+const LOAD_MORE_BATCH_SIZE = 6;
+const BATCH_LOAD_DELAY = 500; // Delay in ms before allowing next batch to load
 
 export default function GalleryGrid({ galleries }: GalleryGridProps) {
   const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH_SIZE);
   const observerTarget = useRef<HTMLDivElement>(null);
   const isLoadingRef = useRef(false);
+  const loadTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,12 +27,23 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
           visibleCount < galleries.length
         ) {
           isLoadingRef.current = true;
+
+          // Clear any existing timeout
+          if (loadTimeoutRef.current) {
+            clearTimeout(loadTimeoutRef.current);
+          }
+
           setVisibleCount((prev) => {
             const newCount = Math.min(
               prev + LOAD_MORE_BATCH_SIZE,
               galleries.length
             );
-            isLoadingRef.current = false;
+
+            // Reset loading flag after a delay to allow images to render
+            loadTimeoutRef.current = setTimeout(() => {
+              isLoadingRef.current = false;
+            }, BATCH_LOAD_DELAY);
+
             return newCount;
           });
         }
@@ -49,6 +62,9 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
     return () => {
       if (currentTarget) {
         observer.unobserve(currentTarget);
+      }
+      if (loadTimeoutRef.current) {
+        clearTimeout(loadTimeoutRef.current);
       }
     };
   }, [visibleCount, galleries.length]);
