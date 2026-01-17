@@ -8,6 +8,10 @@ const nextConfig = {
         hostname: 'ophdlafxdp1yk5hy.public.blob.vercel-storage.com',
         pathname: '/photos/**', // Allow any path under /photos
       },
+      {
+        protocol: "https",
+        hostname: "*.public.blob.vercel-storage.com",
+      },
     ],
   },
 }
