@@ -34,3 +34,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# photos and vidoes
+public/photos/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.mov
