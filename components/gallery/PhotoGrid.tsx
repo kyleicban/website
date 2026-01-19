@@ -16,7 +16,7 @@ export default function PhotoGrid({ gallery }: PhotoGridProps) {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="grid grid-cols-3 gap-1">
         {mediaItems.map((item, index) => (
           <button
             key={item.src}
