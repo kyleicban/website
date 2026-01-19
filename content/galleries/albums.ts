@@ -777,10 +777,10 @@ export const bali: Gallery = {
 
 export const appleChristmasParty: Gallery = {
   slug: "apple-christmas-party",
-  date: "2025-12-10",
+  date: "2024-12-10",
   location: "Apple Park",
   caption: "🌈🛸🎄",
-  photos: [`${BASE_URL}/photos/hong-kong-2025/1.jpeg`],
+  photos: [`${BASE_URL}/photos/apple-christmas-party/1.jpeg`],
 };
 
 export const elNido: Gallery = {
@@ -999,7 +999,7 @@ export const yosemite2025: Gallery = {
 
 export const hawaii2025PaddleBoarding: Gallery = {
   slug: "hawaii-2025-week-one",
-  date: "2025-11-17",
+  date: "2025-11-15",
   location: "Honolulu, HI",
   caption: "Hawai'i Week One! Sunshine gives me a serotonin boost 😌",
   photos: [`${BASE_URL}/photos/hawaii-2025-week-one/1.jpeg`],

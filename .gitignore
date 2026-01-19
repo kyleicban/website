@@ -41,3 +41,6 @@ public/photos/
 *.png
 *.webp
 *.mov
+
+# scripts
+/scripts
