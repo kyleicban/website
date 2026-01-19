@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     icon: [
       {
         media: '(prefers-color-scheme: light)',
-        url: '/dino.png',
+        url: '/dino.ico',
       },
       {
         media: '(prefers-color-scheme: dark)',
-        url: '/dino.png',
+        url: '/dino.ico',
       },
     ],
   },
