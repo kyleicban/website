@@ -59,6 +59,10 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
     };
   }, [loadMore]); // Dependency is now just the loadMore function
 
+  useEffect(() => {
+    console.log("Total galleries:", galleries.length);
+  }, [galleries.length]);
+
   const visibleGalleries = galleries.slice(0, visibleCount);
   const hasMore = visibleCount < galleries.length;
 
