@@ -3,8 +3,8 @@ import GalleryGrid from "@/components/GalleryGrid";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Photo Gallery",
-  description: "Browse all photo galleries",
+  title: "KDI | Photo Gallery",
+  description: "Browse my cherished mementos",
 };
 
 export default function GalleryPage() {

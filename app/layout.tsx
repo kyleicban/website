@@ -3,8 +3,20 @@ import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Photo Gallery",
-  description: "A personal photo gallery",
+  title: "KDI",
+  description: "A personal, online storage bin",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/dino.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/dino.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

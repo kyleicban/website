@@ -11,20 +11,20 @@ export default function Navbar() {
           >
             KYLE DRAKE ICBAN
           </Link>
-          {/* <div className="flex justify-between items-center h-16 gap-1 divide-x divide-gray-400"> */}
-            {/* <Link
+          <div className="flex justify-between items-center h-16 gap-10">
+            <Link
               href="/experience"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
             >
               Work Experience
-            </Link> */}
+            </Link>
             <Link
               href="/gallery"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
             >
               Gallery
             </Link>
-          {/* </div> */}
+          </div>
         </div>
       </div>
     </nav>
