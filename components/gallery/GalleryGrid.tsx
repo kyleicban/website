@@ -16,26 +16,28 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
   const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH_SIZE);
   const observerTarget = useRef<HTMLDivElement>(null);
   const isLoadingRef = useRef(false);
-  const loadTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const loadTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // 1. Move the loading logic into a reusable function
   const loadMore = useCallback(() => {
     if (isLoadingRef.current || visibleCount >= galleries.length) return;
-
     isLoadingRef.current = true;
-
-    if (loadTimeoutRef.current) clearTimeout(loadTimeoutRef.current);
-
-    setVisibleCount((prev) => {
-      const newCount = Math.min(prev + LOAD_MORE_BATCH_SIZE, galleries.length);
-      
-      loadTimeoutRef.current = setTimeout(() => {
-        isLoadingRef.current = false;
-      }, BATCH_LOAD_DELAY);
-
-      return newCount;
-    });
-  }, [galleries.length, visibleCount]);
+  
+    setVisibleCount((prev) =>
+      Math.min(prev + LOAD_MORE_BATCH_SIZE, galleries.length)
+    );
+  }, [visibleCount, galleries.length]);
+  
+  useEffect(() => {
+    if (!isLoadingRef.current) return;
+  
+    const timeout = setTimeout(() => {
+      isLoadingRef.current = false;
+    }, BATCH_LOAD_DELAY);
+  
+    return () => clearTimeout(timeout);
+  }, [visibleCount]);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,23 +47,25 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
         }
       },
       {
-        threshold: 0.1,
-        rootMargin: "200px",
+        threshold: 0,
+        rootMargin: "400px",
       }
     );
 
     const currentTarget = observerTarget.current;
-    if (currentTarget) observer.observe(currentTarget);
+    if (currentTarget) {
+      observer.observe(currentTarget);
+    
+      if (currentTarget.getBoundingClientRect().top < window.innerHeight) {
+        loadMore();
+      }
+    }
 
     return () => {
       if (currentTarget) observer.unobserve(currentTarget);
       if (loadTimeoutRef.current) clearTimeout(loadTimeoutRef.current);
     };
-  }, [loadMore]); // Dependency is now just the loadMore function
-
-  useEffect(() => {
-    console.log("Total galleries:", galleries.length);
-  }, [galleries.length]);
+  }, [loadMore]);
 
   const visibleGalleries = galleries.slice(0, visibleCount);
   const hasMore = visibleCount < galleries.length;
