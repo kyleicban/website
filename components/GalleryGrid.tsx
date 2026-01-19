@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import type { Gallery } from "@/content/galleries/types";
 import GalleryCard from "./GalleryCard";
 
@@ -10,7 +10,7 @@ interface GalleryGridProps {
 
 const INITIAL_BATCH_SIZE = 18;
 const LOAD_MORE_BATCH_SIZE = 6;
-const BATCH_LOAD_DELAY = 500; // Delay in ms before allowing next batch to load
+const BATCH_LOAD_DELAY = 500;
 
 export default function GalleryGrid({ galleries }: GalleryGridProps) {
   const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH_SIZE);
@@ -18,56 +18,46 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
   const isLoadingRef = useRef(false);
   const loadTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // 1. Move the loading logic into a reusable function
+  const loadMore = useCallback(() => {
+    if (isLoadingRef.current || visibleCount >= galleries.length) return;
+
+    isLoadingRef.current = true;
+
+    if (loadTimeoutRef.current) clearTimeout(loadTimeoutRef.current);
+
+    setVisibleCount((prev) => {
+      const newCount = Math.min(prev + LOAD_MORE_BATCH_SIZE, galleries.length);
+      
+      loadTimeoutRef.current = setTimeout(() => {
+        isLoadingRef.current = false;
+      }, BATCH_LOAD_DELAY);
+
+      return newCount;
+    });
+  }, [galleries.length, visibleCount]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (
-          entries[0].isIntersecting &&
-          !isLoadingRef.current &&
-          visibleCount < galleries.length
-        ) {
-          isLoadingRef.current = true;
-
-          // Clear any existing timeout
-          if (loadTimeoutRef.current) {
-            clearTimeout(loadTimeoutRef.current);
-          }
-
-          setVisibleCount((prev) => {
-            const newCount = Math.min(
-              prev + LOAD_MORE_BATCH_SIZE,
-              galleries.length
-            );
-
-            // Reset loading flag after a delay to allow images to render
-            loadTimeoutRef.current = setTimeout(() => {
-              isLoadingRef.current = false;
-            }, BATCH_LOAD_DELAY);
-
-            return newCount;
-          });
+        if (entries[0].isIntersecting) {
+          loadMore();
         }
       },
       {
         threshold: 0.1,
-        rootMargin: "200px", // Start loading when 200px away from viewport
+        rootMargin: "200px",
       }
     );
 
     const currentTarget = observerTarget.current;
-    if (currentTarget) {
-      observer.observe(currentTarget);
-    }
+    if (currentTarget) observer.observe(currentTarget);
 
     return () => {
-      if (currentTarget) {
-        observer.unobserve(currentTarget);
-      }
-      if (loadTimeoutRef.current) {
-        clearTimeout(loadTimeoutRef.current);
-      }
+      if (currentTarget) observer.unobserve(currentTarget);
+      if (loadTimeoutRef.current) clearTimeout(loadTimeoutRef.current);
     };
-  }, [visibleCount, galleries.length]);
+  }, [loadMore]); // Dependency is now just the loadMore function
 
   const visibleGalleries = galleries.slice(0, visibleCount);
   const hasMore = visibleCount < galleries.length;
@@ -83,15 +73,20 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
           />
         ))}
       </div>
+      
       {hasMore && (
         <div
           ref={observerTarget}
-          className="flex justify-center items-center py-8 min-h-[100px]"
-          aria-label="Loading more galleries"
+          className="flex justify-center items-center py-12 min-h-[100px]"
         >
-          <div className="text-neutral-400 dark:text-neutral-600 text-sm">
-            Loading more...
-          </div>
+          {/* 2. Hidden button/link fallback */}
+          <button
+            onClick={loadMore}
+            className="text-neutral-400 dark:text-neutral-600 text-sm hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors cursor-pointer"
+            aria-label="Manually load more galleries"
+          >
+            {isLoadingRef.current ? "Loading..." : "Loading more (or click to force)"}
+          </button>
         </div>
       )}
     </>
