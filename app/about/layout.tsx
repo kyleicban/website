@@ -1,4 +1,10 @@
-export default function GalleryLayout({
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description: "About Kyle",
+};
+
+export default function WorkExperienceLayout({
   children,
 }: {
   children: React.ReactNode;

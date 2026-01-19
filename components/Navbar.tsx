@@ -13,16 +13,28 @@ export default function Navbar() {
           </Link>
           <div className="flex justify-between items-center h-16 gap-10">
             <Link
-              href="/experience"
+              href="/about"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
             >
-              Work Experience
+              About
+            </Link>
+            <Link
+              href="/work-experience"
+              className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
+            >
+              Work
             </Link>
             <Link
               href="/gallery"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
             >
               Gallery
+            </Link>
+            <Link
+              href="/stickers"
+              className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
+            >
+              Stickers
             </Link>
           </div>
         </div>

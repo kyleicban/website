@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { galleries } from "@/content/galleries";
-import PhotoGrid from "@/components/PhotoGrid";
+import PhotoGrid from "@/components/gallery/PhotoGrid";
 import type { Metadata } from "next";
 import type { Gallery } from "@/content/galleries/types";
 import { getMediaItems, formatDate } from "@/content/galleries/types";

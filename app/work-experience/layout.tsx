@@ -1,10 +1,10 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  description: "Browse my cherished mementos",
+  description: "See where I've worked, present and past",
 };
 
-export default function GalleryLayout({
+export default function WorkExperienceLayout({
   children,
 }: {
   children: React.ReactNode;
