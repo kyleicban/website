@@ -19,7 +19,7 @@ export default function StickersPage() {
       <h1 className="text-3xl md:text-4xl font-light mb-8">I have a Redbubble shop!</h1>
       <TypeWriterDescription phrase={randomPhrase} />
       <Link
-      href="// https://www.redbubble.com/people/kyleicban/shop"
+      href="https://www.redbubble.com/people/kyleicban/shop"
       target="_blank"
       rel="noopener noreferrer"
       className="group block rounded-lg border border-neutral-200 bg-white p-5 transition-all
