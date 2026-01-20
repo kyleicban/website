@@ -74,7 +74,7 @@ export const woodenDyno: Gallery = {
   date: "2019-06-10",
   location: "John Wooden Recreation Center",
   caption: "Everybody sent their projects this day 💪",
-  photos: ["/photos/wooden-dyno/1.jpeg"],
+  photos: [`${BASE_URL}/photos/wooden-dyno/1.jpeg`],
 };
 
 export const temecula2020: Gallery = {
@@ -437,10 +437,10 @@ export const centralRockCompDyno: Gallery = {
   caption:
     "Climbing gym opened up the comp dynos and ended up projecting this green one. So stoked to send in one sesh (send in last vid!) Felt impossible but last attempt I felt in control so I would give it a V6.",
   photos: [
-    "/photos/central-rock-comp-dyno/1.mov",
-    "/photos/central-rock-comp-dyno/2.mov",
-    "/photos/central-rock-comp-dyno/3.mov",
-    "/photos/central-rock-comp-dyno/4.mov",
+    `${BASE_URL}/photos/central-rock-comp-dyno/1.mov`,
+    `${BASE_URL}/photos/central-rock-comp-dyno/2.mov`,
+    `${BASE_URL}/photos/central-rock-comp-dyno/3.mov`,
+    `${BASE_URL}/photos/central-rock-comp-dyno/4.mov`,
   ],
 };
 
@@ -491,7 +491,7 @@ export const vitalTemeculaV7: Gallery = {
   location: "VITAL Climbing Gym - Murrieta",
   caption:
     "Didn't record the first part, but got a super delicate V7 while at home. Was the only one to send it this day 💪",
-  photos: ["/photos/vital-temecula-v7/1.mov"],
+  photos: [`${BASE_URL}/photos/vital-temecula-v7/1.mov`],
 };
 
 export const shenzhen2023: Gallery = {
@@ -537,7 +537,7 @@ export const rageRoom: Gallery = {
   date: "2023-06-26",
   location: "Williamsburg, NY",
   caption: "Enjoy this edit I made of Gloria and I smashing shit",
-  photos: ["/photos/rage-room/1.mov"],
+  photos: [`${BASE_URL}/photos/rage-room/1.mov`],
 };
 
 export const niagaraFalls: Gallery = {
@@ -690,7 +690,7 @@ export const vitalBrooklynV7: Gallery = {
   date: "2023-12-06",
   location: "VITAL Climbing Gym - Brooklyn",
   caption: "NYC send off, got this sick V7 🤙",
-  photos: ["/photos/vital-brooklyn-v7/1.mov"],
+  photos: [`${BASE_URL}/photos/vital-brooklyn-v7/1.mov`],
 };
 
 export const sedona: Gallery = {
@@ -730,7 +730,7 @@ export const bowling: Gallery = {
   date: "2023-04-17",
   location: "Cupertino, CA",
   caption: "Clutch 11th frame to beat Mr Batman 😤",
-  photos: ["/photos/bowling/1.mov"],
+  photos: [`${BASE_URL}/photos/bowling/1.mov`],
 };
 
 export const whistler: Gallery = {
@@ -811,7 +811,7 @@ export const jabbawockeez: Gallery = {
   location: "The Jabbawockeez",
   caption:
     "Karaoke with the Jabbawockeez? Didn't know that was on the bucket list",
-  photos: ["/photos/jabbawockeez/1.mov"],
+  photos: [`${BASE_URL}/photos/jabbawockeez/1.mov`],
 };
 
 export const bigSur2024: Gallery = {
@@ -990,7 +990,7 @@ export const skydiving: Gallery = {
   date: "2025-05-26",
   location: "Gilroy, CA",
   caption: "WOOOOOOOOOOOOOOOO!",
-  photos: ["/photos/skydiving/1.mov"],
+  photos: [`${BASE_URL}/photos/skydiving/1.mov`],
 };
 
 export const hairDonation: Gallery = {
