@@ -1,17 +1,15 @@
-import TypeWriterDescription from '@/components/TypeWriterDescription';
+import TypeWriterDescription from "@/components/TypeWriterDescription";
 
 export default function Home() {
-
   const phrases = [
     "Learning Mario Kart World shortcuts...",
     "Denying that I'm Gen Z...",
     "Loreming and ipsuming...",
     "Probably watching One Piece...",
     "Drinking overpriced matcha...",
-    "Honk..."
+    "Honk...",
   ];
-  
-  // Pick a phrase only after the component mounts on the client
+
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
 
   return (
@@ -21,8 +19,8 @@ export default function Home() {
           KYLE DRAKE ICBAN
         </h1>
         {/* Fixed height container prevents layout shift while typing */}
-        <div className="h-8"> 
-            <TypeWriterDescription phrase={randomPhrase} />
+        <div className="h-8">
+          <TypeWriterDescription phrase={randomPhrase} />
         </div>
       </div>
     </main>

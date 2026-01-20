@@ -9,8 +9,7 @@ export default function GalleryPage() {
     "Romanticizing my life...",
     "Planning my next vacation...",
   ];
-  
-  // Pick a phrase only after the component mounts on the client
+
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
 
   // Sort galleries by date (newest first)
@@ -32,4 +31,3 @@ export default function GalleryPage() {
     </div>
   );
 }
-

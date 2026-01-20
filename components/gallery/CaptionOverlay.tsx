@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { formatDate } from "@/content/galleries/types";
+import { formatDate } from "@/content/galleries/utils";
 
 interface CaptionOverlayProps {
   caption?: string;
@@ -16,7 +16,6 @@ export default function CaptionOverlay({
   location,
   isVisible,
 }: CaptionOverlayProps) {
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -36,4 +35,3 @@ export default function CaptionOverlay({
     </motion.div>
   );
 }
-

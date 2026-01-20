@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getMediaItems } from "@/content/galleries/types";
+import { getMediaItems } from "@/content/galleries/utils";
 import type { Gallery } from "@/content/galleries/types";
 
 interface GalleryCardProps {

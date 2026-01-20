@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        media: '(prefers-color-scheme: light)',
-        url: '/dino.ico',
+        media: "(prefers-color-scheme: light)",
+        url: "/dino.ico",
       },
       {
-        media: '(prefers-color-scheme: dark)',
-        url: '/dino.ico',
+        media: "(prefers-color-scheme: dark)",
+        url: "/dino.ico",
       },
     ],
   },

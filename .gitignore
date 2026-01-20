@@ -36,11 +36,6 @@ next-env.d.ts
 
 # photos and vidoes
 public/photos/
-*.jpg
-*.jpeg
-*.png
-*.webp
-*.mov
 
 # scripts
 /scripts

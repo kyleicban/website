@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import MediaViewer from "./MediaViewer";
-import { getMediaItems, isVideo } from "@/content/galleries/types";
+import { getMediaItems } from "@/content/galleries/utils";
 import type { Gallery } from "@/content/galleries/types";
 
 interface PhotoGridProps {
@@ -71,4 +71,3 @@ export default function PhotoGrid({ gallery }: PhotoGridProps) {
     </>
   );
 }
-

@@ -183,7 +183,10 @@ export const kenma: Gallery = {
   date: "2021-10-31",
   location: "Nekoma High School",
   caption: "Flying high!",
-  photos: [`${BASE_URL}/photos/kenma/1.jpeg`, `${BASE_URL}/photos/kenma/2.jpeg`],
+  photos: [
+    `${BASE_URL}/photos/kenma/1.jpeg`,
+    `${BASE_URL}/photos/kenma/2.jpeg`,
+  ],
 };
 
 export const optimizationTextbook: Gallery = {
@@ -214,7 +217,10 @@ export const laBoy: Gallery = {
   date: "2022-01-04",
   location: "Los Angeles, CA",
   caption: "Fit check",
-  photos: [`${BASE_URL}/photos/la-boy/1.jpeg`, `${BASE_URL}/photos/la-boy/2.jpeg`],
+  photos: [
+    `${BASE_URL}/photos/la-boy/1.jpeg`,
+    `${BASE_URL}/photos/la-boy/2.jpeg`,
+  ],
 };
 
 export const oahu2021: Gallery = {
@@ -235,7 +241,10 @@ export const getty: Gallery = {
   date: "2022-01-23",
   location: "The Getty Museum",
   caption: "Day the Getty :)",
-  photos: [`${BASE_URL}/photos/getty/1.jpeg`, `${BASE_URL}/photos/getty/2.jpeg`],
+  photos: [
+    `${BASE_URL}/photos/getty/1.jpeg`,
+    `${BASE_URL}/photos/getty/2.jpeg`,
+  ],
 };
 
 export const westwoodPhotoshoot: Gallery = {
@@ -553,7 +562,10 @@ export const ratRock: Gallery = {
   date: "2023-07-22",
   location: "Rat Rock",
   caption: "Classic climbing spot in Central Park",
-  photos: [`${BASE_URL}/photos/rat-rock/1.jpeg`, `${BASE_URL}/photos/rat-rock/2.jpeg`],
+  photos: [
+    `${BASE_URL}/photos/rat-rock/1.jpeg`,
+    `${BASE_URL}/photos/rat-rock/2.jpeg`,
+  ],
 };
 
 export const greatOakNYCCrew: Gallery = {
@@ -836,7 +848,7 @@ export const bali: Gallery = {
     `${BASE_URL}/photos/bali/3.jpeg`,
     `${BASE_URL}/photos/bali/4.jpeg`,
     `${BASE_URL}/photos/bali/5.jpeg`,
-    `${BASE_URL}/photos/bali/6.mov`
+    `${BASE_URL}/photos/bali/6.mov`,
   ],
 };
 

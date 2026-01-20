@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { WorkExperience } from "@/content/work/types";
-import { formatDateRange } from "@/lib/work-dates";
+import { formatDateRange } from "@/content/work/utils";
 
 interface Props {
   item: WorkExperience;

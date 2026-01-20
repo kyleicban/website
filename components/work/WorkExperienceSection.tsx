@@ -1,5 +1,5 @@
 import { workExperience } from "@/content/work";
-import { sortWorkExperience } from "@/lib/work-dates";
+import { sortWorkExperience } from "@/content/work/utils";
 import WorkExperienceList from "./WorkExperienceList";
 
 export default function WorkExperienceSection() {

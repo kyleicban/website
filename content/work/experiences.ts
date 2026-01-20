@@ -6,7 +6,7 @@ export const apple: WorkExperience = {
   logo: "/logos/apple.svg",
   role: "Software Engineer",
   url: "https://account.apple.com",
-  startDate: { month: 1, year: 2024 }
+  startDate: { month: 1, year: 2024 },
 };
 
 export const atlassian: WorkExperience = {
@@ -16,7 +16,7 @@ export const atlassian: WorkExperience = {
   role: "Software Engineer",
   url: "https://www.atlassian.com/",
   startDate: { month: 7, year: 2022 },
-  endDate: { month: 12, year: 2023 }
+  endDate: { month: 12, year: 2023 },
 };
 
 export const hubspot: WorkExperience = {
@@ -26,7 +26,7 @@ export const hubspot: WorkExperience = {
   role: "Frontend Engineer Co-op",
   url: "https://www.hubspot.com/",
   startDate: { month: 1, year: 2022 },
-  endDate: { month: 6, year: 2022 }
+  endDate: { month: 6, year: 2022 },
 };
 
 export const rubrik: WorkExperience = {
@@ -36,7 +36,7 @@ export const rubrik: WorkExperience = {
   role: "Software Engineer Intern",
   url: "https://www.rubrik.com/",
   startDate: { month: 9, year: 2021 },
-  endDate: { month: 12, year: 2021 }
+  endDate: { month: 12, year: 2021 },
 };
 
 export const atlassianIntern: WorkExperience = {
@@ -46,5 +46,5 @@ export const atlassianIntern: WorkExperience = {
   role: "Frontend Engineer Intern",
   url: "https://www.atlassian.com/",
   startDate: { month: 6, year: 2021 },
-  endDate: { month: 9, year: 2021 }
+  endDate: { month: 9, year: 2021 },
 };

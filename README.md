@@ -89,4 +89,3 @@ This project is designed to be deployed on Vercel. Simply connect your Git repos
 ## License
 
 MIT
-

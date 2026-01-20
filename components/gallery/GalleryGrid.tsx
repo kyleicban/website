@@ -9,7 +9,8 @@ interface GalleryGridProps {
 }
 
 export default function GalleryGrid({ galleries }: GalleryGridProps) {
-  const {loadMore, visibleGalleries, hasMore, observerTarget} = useInfiniteScroll(galleries)
+  const { loadMore, visibleGalleries, hasMore, observerTarget } =
+    useInfiniteScroll(galleries);
 
   return (
     <>
@@ -22,7 +23,7 @@ export default function GalleryGrid({ galleries }: GalleryGridProps) {
           />
         ))}
       </div>
-      
+
       {hasMore && (
         <div
           ref={observerTarget}

@@ -2,7 +2,12 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import CaptionOverlay from "./CaptionOverlay";
 import type { MediaItem } from "@/content/galleries/types";
 
@@ -29,7 +34,7 @@ export default function MediaViewer({
 
   useEffect(() => {
     setShouldReduceMotion(
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     );
   }, []);
 
@@ -197,4 +202,3 @@ export default function MediaViewer({
     </div>
   );
 }
-

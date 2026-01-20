@@ -9,10 +9,10 @@ interface Props {
 export default function WorkExperienceList({ items }: Props) {
   return (
     <div className="flex flex-col space-y-2">
-        {items.map(item => (
+      {items.map((item) => (
         <WorkExperienceCard key={item.id} item={item} />
-    ))}
-    <LinkedInCard />
+      ))}
+      <LinkedInCard />
     </div>
   );
 }

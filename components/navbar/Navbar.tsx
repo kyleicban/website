@@ -64,7 +64,10 @@ export default function Navbar() {
             <MobileNavLink href="/about" onClick={() => setOpen(false)}>
               About
             </MobileNavLink>
-            <MobileNavLink href="/work-experience" onClick={() => setOpen(false)}>
+            <MobileNavLink
+              href="/work-experience"
+              onClick={() => setOpen(false)}
+            >
               Work
             </MobileNavLink>
             <MobileNavLink href="/gallery" onClick={() => setOpen(false)}>
