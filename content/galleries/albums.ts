@@ -74,7 +74,7 @@ export const woodenDyno: Gallery = {
   date: "2019-06-10",
   location: "John Wooden Recreation Center",
   caption: "Everybody sent their projects this day 💪",
-  photos: [`${BASE_URL}/photos/wooden-dyno/1.jpeg`],
+  photos: [`${BASE_URL}/photos/wooden-dyno/1.mov`],
 };
 
 export const temecula2020: Gallery = {
