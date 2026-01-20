@@ -1,5 +1,3 @@
-"use client"
-
 import TypeWriterDescription from "@/components/TypeWriterDescription";
 
 export default function AboutMePage() {

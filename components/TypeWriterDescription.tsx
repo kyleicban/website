@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 export default function TypeWriterDescription({phrase, typeSpeed = 30}: {phrase: string, typeSpeed?: number}) {

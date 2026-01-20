@@ -1,5 +1,3 @@
-"use client"
-
 import TypeWriterDescription from "@/components/TypeWriterDescription";
 import Link from "next/link";
 import Image from "next/image";

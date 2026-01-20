@@ -1,5 +1,3 @@
-"use client"
-
 import WorkExperienceSection from "@/components/work/WorkExperienceSection";
 import TypeWriterDescription from "@/components/TypeWriterDescription";
 

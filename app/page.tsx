@@ -1,5 +1,3 @@
-"use client"; // Required for Hooks in Next.js App Router
-
 import TypeWriterDescription from '@/components/TypeWriterDescription';
 
 export default function Home() {

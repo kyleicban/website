@@ -1,5 +1,3 @@
-"use client"
-
 import { galleries } from "@/content/galleries";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
 import TypeWriterDescription from "@/components/TypeWriterDescription";

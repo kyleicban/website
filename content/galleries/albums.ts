@@ -681,7 +681,7 @@ export const temeculaNYCBesties: Gallery = {
   slug: "temecula-NYC-besties",
   date: "2023-11-21",
   location: "New York City, NY",
-  caption: "Friends for 7 yearts and counting <3",
+  caption: "Friends for 7 years and counting <3",
   photos: [`${BASE_URL}/photos/temecula-nyc-besties/1.jpeg`],
 };
 
@@ -922,7 +922,7 @@ export const taiwan2025: Gallery = {
 };
 
 export const japan2025CherryBlossoms: Gallery = {
-  slug: "asia-trip-japan-nerd-stuff",
+  slug: "asia-trip-cherry-blossoms",
   date: "2025-03-30",
   location: "Tokyo, Japan",
   caption: "Asia Trip: Last stop!",
