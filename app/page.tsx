@@ -1,4 +1,5 @@
 import TypeWriterDescription from "@/components/TypeWriterDescription";
+import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function Home() {
   const phrases = [
@@ -10,7 +11,7 @@ export default function Home() {
     "Honk...",
   ];
 
-  const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+  const randomPhrase = useRandomPhrase(phrases);
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-8 bg-white dark:bg-neutral-950">

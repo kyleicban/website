@@ -1,5 +1,6 @@
 import WorkExperienceSection from "@/components/work/WorkExperienceSection";
 import TypeWriterDescription from "@/components/TypeWriterDescription";
+import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function WorkExperiencePage() {
   const phrases = [
@@ -11,7 +12,7 @@ export default function WorkExperiencePage() {
     "Vibing...",
   ];
 
-  const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+  const randomPhrase = useRandomPhrase(phrases);
 
   return (
     <div>

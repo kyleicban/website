@@ -1,6 +1,7 @@
 import { galleries } from "@/content/galleries";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
 import TypeWriterDescription from "@/components/TypeWriterDescription";
+import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function GalleryPage() {
   const phrases = [
@@ -10,7 +11,7 @@ export default function GalleryPage() {
     "Planning my next vacation...",
   ];
 
-  const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+  const randomPhrase = useRandomPhrase(phrases);
 
   // Sort galleries by date (newest first)
   const sortedGalleries = [...galleries].sort((a, b) => {

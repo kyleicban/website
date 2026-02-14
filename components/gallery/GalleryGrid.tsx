@@ -2,7 +2,7 @@
 
 import type { Gallery } from "@/content/galleries/types";
 import GalleryCard from "./GalleryCard";
-import useInfiniteScroll from "./hooks/useInfiniteScroll";
+import useInfiniteScroll from "@/hooks/useInfiniteScroll";
 
 interface GalleryGridProps {
   galleries: Gallery[];
