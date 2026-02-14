@@ -31,7 +31,7 @@ export default function TypeWriterDescription({
     return () => {
       clearInterval(typeInterval);
     };
-  }, []);
+  }, [phrase, typeSpeed]);
 
   return (
     <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 font-mono italic mb-2 whitespace-pre-line">

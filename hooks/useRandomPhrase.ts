@@ -10,7 +10,7 @@ export default function useRandomPhrase(phrases: string[]) {
   useEffect(() => {
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
     setRandomPhrase(randomPhrase);
-  }, []);
+  }, [phrases]);
 
   return randomPhrase;
 }
