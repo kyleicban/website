@@ -10,7 +10,7 @@ export default function AboutMePage() {
   return (
     <div>
       <h1 className="text-3xl md:text-4xl font-light mb-8">About me</h1>
-      <TypeWriterDescription phrase={blurb} typeSpeed={5} />
+      <TypeWriterDescription phrases={[blurb]} typeSpeed={5} />
     </div>
   );
 }

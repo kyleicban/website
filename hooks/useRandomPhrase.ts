@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 interface RandomPhraseParams {
@@ -11,8 +9,8 @@ export default function useRandomPhrase(phrases: string[]) {
 
   useEffect(() => {
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
-    setRandomPhrase(randomPhrase)
-  }, [])
-  
-  return randomPhrase
+    setRandomPhrase(randomPhrase);
+  }, []);
+
+  return randomPhrase;
 }

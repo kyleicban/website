@@ -1,15 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function TypeWriterDescription({
-  phrase,
+  phrases,
   typeSpeed = 30,
 }: {
-  phrase: string;
+  phrases: string[];
   typeSpeed?: number;
 }) {
   const [displayText, setDisplayText] = useState("");
+
+  const phrase = useRandomPhrase(phrases);
 
   useEffect(() => {
     let charIndex = 0;

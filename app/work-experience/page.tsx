@@ -1,6 +1,5 @@
 import WorkExperienceSection from "@/components/work/WorkExperienceSection";
 import TypeWriterDescription from "@/components/TypeWriterDescription";
-import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function WorkExperiencePage() {
   const phrases = [
@@ -12,15 +11,13 @@ export default function WorkExperiencePage() {
     "Vibing...",
   ];
 
-  const randomPhrase = useRandomPhrase(phrases);
-
   return (
     <div>
       <h1 className="text-3xl md:text-4xl font-light mb-2">Work Experience</h1>
       <h2 className="text-l md:text-xl text-neutral-600 dark:text-neutral-400 font-mono mb-8 italic">
         mailto: kicban29 at gmail dot com
       </h2>
-      <TypeWriterDescription phrase={randomPhrase} />
+      <TypeWriterDescription phrases={phrases} />
       <WorkExperienceSection />
     </div>
   );

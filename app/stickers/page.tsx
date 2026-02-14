@@ -1,7 +1,6 @@
 import TypeWriterDescription from "@/components/TypeWriterDescription";
 import Link from "next/link";
 import Image from "next/image";
-import useRandomPhrase from "@/hooks/useRandomPhrase";
 
 export default function StickersPage() {
   const phrases = [
@@ -11,14 +10,12 @@ export default function StickersPage() {
     "Searching for inspo...",
   ];
 
-  // Pick a phrase only after the component mounts on the client
-  const randomPhrase = useRandomPhrase(phrases);
   return (
     <div>
       <h1 className="text-3xl md:text-4xl font-light mb-8">
         I have a Redbubble shop!
       </h1>
-      <TypeWriterDescription phrase={randomPhrase} />
+      <TypeWriterDescription phrases={phrases} />
       <Link
         href="https://www.redbubble.com/people/kyleicban/shop"
         target="_blank"
