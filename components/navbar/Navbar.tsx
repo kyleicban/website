@@ -15,7 +15,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-lg font-medium text-neutral-900 dark:text-neutral-100 hover:opacity-70 transition-opacity focus:outline-none focus:ring-2 focus:ring-neutral-500 rounded"
+            className="text-lg font-medium text-neutral-900 dark:text-neutral-100 hover:opacity-70 transition-opacity rounded"
           >
             KYLE DRAKE ICBAN
           </Link>
