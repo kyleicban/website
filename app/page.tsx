@@ -11,7 +11,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8 bg-white dark:bg-neutral-950">
+    <main className="flex-1 flex flex-col items-center justify-center p-8 bg-white dark:bg-neutral-950">
       <div className="max-w-2xl text-center">
         <h1 className="text-4xl md:text-6xl font-light mb-6 tracking-tight">
           KYLE DRAKE ICBAN
