@@ -81,60 +81,111 @@ export default function MediaViewer({
       role="dialog"
       aria-modal="true"
       aria-label="Gallery post"
-      className="fixed inset-0 z-50 bg-black flex items-center justify-center"
+      className="fixed inset-0 z-50 bg-black"
       onClick={() => setShowCaption(!showCaption)}
     >
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={shouldReduceMotion ? { opacity: 0 } : { x: 300, opacity: 0 }}
-          animate={shouldReduceMotion ? { opacity: 1 } : { x: 0, opacity: 1 }}
-          exit={shouldReduceMotion ? { opacity: 0 } : { x: -300, opacity: 0 }}
-          transition={{ duration: shouldReduceMotion ? 0.2 : 0.3 }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.2}
-          onDragEnd={handleDragEnd}
-          style={{ x, opacity }}
-          className="relative w-full h-full flex items-center justify-center"
-        >
-          {currentMedia.type === "video" ? (
-            <video
-              src={currentMedia.src}
-              controls
-              autoPlay
-              className="max-w-full max-h-full"
-              onMouseDown={(e) => e.stopPropagation()}
-            />
-          ) : (
-            <Image
-              src={currentMedia.src}
-              alt={`Media ${currentIndex + 1} of ${media.length}`}
-              fill
-              className="object-contain"
-              priority
-              quality={90}
-            />
-          )}
-        </motion.div>
-      </AnimatePresence>
+      <div className="absolute inset-x-0 top-16 bottom-0 flex items-center justify-center">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={
+              shouldReduceMotion ? { opacity: 0 } : { x: 300, opacity: 0 }
+            }
+            animate={shouldReduceMotion ? { opacity: 1 } : { x: 0, opacity: 1 }}
+            exit={shouldReduceMotion ? { opacity: 0 } : { x: -300, opacity: 0 }}
+            transition={{ duration: shouldReduceMotion ? 0.2 : 0.3 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={handleDragEnd}
+            style={{ x, opacity }}
+            className="relative w-full h-full flex items-center justify-center"
+          >
+            {currentMedia.type === "video" ? (
+              <video
+                src={currentMedia.src}
+                controls
+                autoPlay
+                className="max-w-full max-h-full"
+                onMouseDown={(e) => e.stopPropagation()}
+              />
+            ) : (
+              <Image
+                src={currentMedia.src}
+                alt={`Media ${currentIndex + 1} of ${media.length}`}
+                fill
+                className="object-contain"
+                priority
+                quality={90}
+              />
+            )}
+          </motion.div>
+        </AnimatePresence>
 
-      <CaptionOverlay
-        caption={caption}
-        date={date}
-        location={location}
-        isVisible={showCaption}
-      />
+        <CaptionOverlay
+          caption={caption}
+          date={date}
+          location={location}
+          isVisible={showCaption}
+        />
 
-      {media.length > 1 && (
-        <>
+        {media.length > 1 && (
+          <>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrevious();
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
+              aria-label="Previous media"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
+              aria-label="Next media"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </>
+        )}
+
+        {onClose && (
           <button
             onClick={(e) => {
               e.stopPropagation();
-              goToPrevious();
+              onClose();
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
-            aria-label="Previous media"
+            className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
+            aria-label="Close viewer"
           >
             <svg
               className="w-6 h-6"
@@ -146,65 +197,18 @@ export default function MediaViewer({
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M15 19l-7-7 7-7"
+                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </button>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              goToNext();
-            }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
-            aria-label="Next media"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </>
-      )}
+        )}
 
-      {onClose && (
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onClose();
-          }}
-          className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
-          aria-label="Close viewer"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      )}
-
-      {media.length > 1 && (
-        <div className="absolute bottom-16 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full z-10">
-          {currentIndex + 1} / {media.length}
-        </div>
-      )}
+        {media.length > 1 && (
+          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full z-10">
+            {currentIndex + 1} / {media.length}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

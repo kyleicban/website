@@ -43,6 +43,22 @@ export default function GalleryPostModal({ gallery }: GalleryPostModalProps) {
     };
   }, []);
 
+  useEffect(() => {
+    if (media.length !== 1) {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          router.back();
+        }
+      };
+
+      window.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        window.removeEventListener("keydown", handleKeyDown);
+      };
+    }
+  }, [router]);
+
   if (media.length === 0) {
     return null;
   }
