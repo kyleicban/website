@@ -27,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <Navbar />
+        <div className="relative z-[60]">
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>

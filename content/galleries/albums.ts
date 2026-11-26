@@ -79,7 +79,7 @@ export const woodenDyno: Gallery = {
 
 export const temecula2020: Gallery = {
   slug: "temecula-2020",
-  date: "2019-02-16",
+  date: "2020-02-16",
   location: "Temecula, CA",
   caption: "Took everyone to see the hometown <3",
   photos: [`${BASE_URL}/photos/temecula-2020/1.jpeg`],
@@ -1112,7 +1112,7 @@ export const hawaii2025Papakolea: Gallery = {
 };
 
 export const hawaii2025Kilauea: Gallery = {
-  slug: "hawaii-2025-",
+  slug: "hawaii-2025-kilauea",
   date: "2025-11-17",
   location: "Hawai'i Volcanoes National Park",
   caption: "Hiked Kīlauea Iki & Crater Rim Trail + Nāhuku Lava Tube",

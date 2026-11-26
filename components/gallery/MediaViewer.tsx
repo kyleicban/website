@@ -78,6 +78,9 @@ export default function MediaViewer({
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Gallery post"
       className="fixed inset-0 z-50 bg-black flex items-center justify-center"
       onClick={() => setShowCaption(!showCaption)}
     >
@@ -174,7 +177,10 @@ export default function MediaViewer({
 
       {onClose && (
         <button
-          onClick={onClose}
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
           className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white z-10"
           aria-label="Close viewer"
         >

@@ -24,6 +24,7 @@ export default function GalleryCard({
   return (
     <Link
       href={`/gallery/${gallery.slug}`}
+      scroll={false}
       className="group relative aspect-square overflow-hidden bg-neutral-100 dark:bg-neutral-900"
       aria-label={`View gallery: ${gallery.title || gallery.slug}`}
     >
